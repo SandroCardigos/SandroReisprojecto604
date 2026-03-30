@@ -1,62 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
 
-<title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+  
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
 
-<link rel="stylesheet" href="css/style.css">
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 
-</head>
+    section.container {
+        flex: 1;
+    }
 
-<body>
+    footer {
+        flex-shrink: 0;
+    }
+  </style>
+  </head>
 
-<header>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Contacto</h1>
 
-<div class="container">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="receitas.html">Receitas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
 
-<h1>Contacto</h1>
+    <section class="container">
+      <h2>Contacto</h2>
 
-<ul class="menu">
-<li><a href="index.html">Home</a></li>
-<li><a href="receitas.html">Receitas</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-</ul>
+      <form id="form">
+        <label>Nome</label>
+        <input type="text" id="nome" />
 
-</div>
+        <label>Email</label>
+        <input type="email" id="email" />
 
-</header>
+        <label>Mensagem</label>
+        <textarea id="mensagem"></textarea>
 
-<section class="container">
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-<h2>Contacto</h2>
+    <footer>
+      <p>© 2026 Site de Receitas</p>
+    </footer>
 
-<form id="form">
-
-<label>Nome</label>
-<input type="text" id="nome">
-
-<label>Email</label>
-<input type="email" id="email">
-
-<label>Mensagem</label>
-<textarea id="mensagem"></textarea>
-
-<button type="submit">Enviar</button>
-
-</form>
-
-</section>
-
-<footer>
-
-<p>© 2026 Site de Receitas</p>
-
-</footer>
-
-<script src="js/script.js"></script>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
